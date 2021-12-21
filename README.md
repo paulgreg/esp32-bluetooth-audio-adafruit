@@ -1,6 +1,6 @@
 # esp32-bluetooth-audio
 
-An ESP32 blueooth audio receiver, inspired by [KitchenRadio](https://github.com/jeroenlukas/KitchenRadio) and using [ESP32-A2DP library](https://github.com/pschatzmann/ESP32-A2DP) ! 🙏 
+An ESP32 blueooth audio receiver, inspired by [KitchenRadio](https://github.com/jeroenlukas/KitchenRadio) and using [ESP32-A2DP library](https://github.com/pschatzmann/ESP32-A2DP) ! 🙏
 
 
 ## Hardware
@@ -20,17 +20,22 @@ Follow [Adafruit VS1053 wiring tutorial](https://learn.adafruit.com/adafruit-vs1
 - VCC  -> 3.3v
 - GND  -> GND
 - CLK  -> IO 18
-- MISO -> IO 19 
+- MISO -> IO 19
 - MOSI -> IO 23
 - CS   -> IO  5
 - RST  -> RST
-- XDCS -> IO 17 
+- XDCS -> IO 17
 - SDCS -> IO 21
 - DREQ -> IO 26
 - AGND -> Center 'ground' pin on jack connector
 - LOUT -> Left pin on jack connector
 - ROUT -> Right pin on jack connector
 
+
+## Librairies
+
+- Adafruit VS1053 Library
+- [ESP32-A2DP](https://github.com/pschatzmann/ESP32-A2DP.git)
 
 ## Flash
 

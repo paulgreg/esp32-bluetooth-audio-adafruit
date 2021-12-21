@@ -1,6 +1,5 @@
 #include <SPI.h>
 #include <Adafruit_VS1053.h>
-#include <SD.h>
 #include "BluetoothA2DPSink.h"
 #include <cbuf.h>
 
@@ -13,9 +12,9 @@
 #define BREAKOUT_CS     5     // VS1053 chip select pin (output)
 #define BREAKOUT_DCS    21    // VS1053 Data/command select pin (output)
 // These are the pins used for the music maker shield
-#define SHIELD_RESET  -1      // VS1053 reset pin (unused!)
-#define SHIELD_CS     7       // VS1053 chip select pin (output)
-#define SHIELD_DCS    6       // VS1053 Data/command select pin (output)
+#define SHIELD_RESET   -1     // VS1053 reset pin (unused!)
+#define SHIELD_CS       7     // VS1053 chip select pin (output)
+#define SHIELD_DCS      6     // VS1053 Data/command select pin (output)
 
 #define CARDCS 17     // Card chip select pin
 // DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
