@@ -1,6 +1,6 @@
 # esp32-bluetooth-audio
 
-An ESP32 blueooth audio receiver, inspired by (KitchenRadio)[https://github.com/jeroenlukas/KitchenRadio] and using (ESP32-A2DP library)[https://github.com/pschatzmann/ESP32-A2DP] ! Many thanks
+An ESP32 blueooth audio receiver, inspired by [KitchenRadio](https://github.com/jeroenlukas/KitchenRadio) and using [ESP32-A2DP library](https://github.com/pschatzmann/ESP32-A2DP) ! 🙏 
 
 
 ## Hardware
