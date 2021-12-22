@@ -42,7 +42,7 @@ Follow [Adafruit VS1053 wiring tutorial](https://learn.adafruit.com/adafruit-vs1
 Flash using « ESP32 DEV Module »
 
 
-## Ressources
+## References
 
-- (VS1053 Datasheet)[https://www.sparkfun.com/datasheets/Components/SMD/vs1053.pdf]
-- (Inspiring issue to connect ESP32-A2DP to VS1053)[https://github.com/pschatzmann/ESP32-A2DP/issues/31]
+- [VS1053 Datasheet](https://www.sparkfun.com/datasheets/Components/SMD/vs1053.pdf)
+- [Inspiring issue to connect ESP32-A2DP to VS1053](https://github.com/pschatzmann/ESP32-A2DP/issues/31)
