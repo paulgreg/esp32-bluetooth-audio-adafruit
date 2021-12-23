@@ -1,3 +1,5 @@
+#include "parameters.h"
+
 #include <SPI.h>
 #include <Adafruit_VS1053.h>
 #include "player.h"
@@ -16,13 +18,14 @@ void setup() {
      Serial.println(F("Couldn't find VS1053, do you have the right pins defined?"));
      while (1);
   } 
-
+  
+  player.begin();
   player.setVolume(10,10); // Set volume for left, right channels. lower numbers == louder volume!
 
   circBuffer.flush();
 
-  a2dp_sink.set_stream_reader(bluetoothsink_read_data_stream, false);
-  a2dp_sink.set_avrc_metadata_callback(bluetoothsink_avrc_metadata_callback);
+  a2dp_sink.set_stream_reader(read_data_stream, false);
+  a2dp_sink.set_avrc_metadata_callback(avrc_metadata_callback);
   a2dp_sink.start("MyAirSpeaker");
   delay(100);
   circBuffer.write((char *)bt_wav_header, 44);
@@ -30,5 +33,5 @@ void setup() {
 }
 
 void loop() {
-  bluetoothsink_handle_stream();
+  handle_stream();
 }
