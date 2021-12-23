@@ -31,6 +31,9 @@ Follow [Adafruit VS1053 wiring tutorial](https://learn.adafruit.com/adafruit-vs1
 - LOUT -> Left pin on jack connector
 - ROUT -> Right pin on jack connector
 
+## Configuration
+
+Copy `parameters.h.dist` to `parameters.h` and change it to your settings
 
 ## Librairies
 
