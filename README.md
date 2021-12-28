@@ -19,13 +19,13 @@ Follow [Adafruit VS1053 wiring tutorial](https://learn.adafruit.com/adafruit-vs1
 ---
 - VCC  -> 3.3v
 - GND  -> GND
-- CLK  -> IO 18
-- MISO -> IO 19
-- MOSI -> IO 23
-- CS   -> IO  5
+- XDCS -> IO 21 
+- SDCS -> IO 17 
+- CS   -> IO 05
 - RST  -> RST
-- XDCS -> IO 17
-- SDCS -> IO 21
+- SCLK -> IO 18
+- MOSI -> IO 23
+- MISO -> IO 19
 - DREQ -> IO 26
 - AGND -> Center 'ground' pin on jack connector
 - LOUT -> Left pin on jack connector
