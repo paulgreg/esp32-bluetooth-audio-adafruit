@@ -34,7 +34,7 @@ void read_data_stream(const uint8_t *data, uint32_t length) {
   if (circBuffer.room() > length) { // If we get -1 here it means nothing could be read from the stream
     if (length > 0) { // Add them to the circular buffer
       circBuffer.write((char *)data, length); // length seems to be 4096 every time
-      Serial.printf("\nRead %lu bytes", length);
+      //Serial.printf("\nRead %lu bytes", length);
     }
   } else {
     Serial.println("\nNothing to read from the stream");
