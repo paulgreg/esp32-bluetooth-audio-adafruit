@@ -1,15 +1,4 @@
-// SPI3 https://techoverflow.net/2021/07/26/what-is-the-spi-pinout-of-the-esp32-esp-wroom-32/
-#define CLK 18       // SPI Clock, shared with SD card
-#define MISO 19      // Input data, from VS1053/SD card
-#define MOSI 23      // Output data, to VS1053/SD card
 
-#define BREAKOUT_RESET  9     // VS1053 reset pin (output)
-#define BREAKOUT_CS     5     // VS1053 chip select pin (output)
-#define BREAKOUT_DCS    21    // VS1053 Data/command select pin (output)
-
-#define CARDCS 17     // Card chip select pin
-// DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
-#define DREQ 26       // VS1053 Data request, ideally an Interrupt pin
 
 Adafruit_VS1053_FilePlayer player = Adafruit_VS1053_FilePlayer(BREAKOUT_RESET, BREAKOUT_CS, BREAKOUT_DCS, DREQ, CARDCS);
 
